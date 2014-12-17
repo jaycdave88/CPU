@@ -12,3 +12,4 @@ Program is now finished and NOT saving any data. To rerun application follow abo
 
 
 ... still working on the code not a finished project just yet.
+feel free to contribute 
