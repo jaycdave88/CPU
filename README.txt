@@ -8,3 +8,7 @@ In new terminal window will open in there hit ' Control + C ' to exit program an
 5. terminal window will tell you the Average usage of CPU
 
 Program is now finished and NOT saving any data. To rerun application follow above steps again. :)
+
+
+
+... still working on the code not a finished project just yet.
