@@ -1,15 +1,18 @@
 Steps to run:
 
-1. cd into the correct Directory where the application lives
-2. run command  ' ruby Step_1.rb '
-3. A new .txt file will have been made on your Desktop ( CPU_info.txt )
-In new terminal window will open in there hit ' Control + C ' to exit program and save data
-4. run command ' ruby Step_2.rb ' execute command in original terminal window
-5. terminal window will tell you the Average usage of CPU
+1. Download the zip
+2. Unzip the .zip file
+3. Move the folder to your 'Desktop'
+4. In Terminal navigate to your 'Desktop'
+5. Run command ' ruby masterRUN.rb '
+6. The NEW Terminal window that opens close it ( or ' Command + W ')
+7. Select the browser you are testing
+8. A new Terminal window will open enter command (' Control + C ')
+9. View Terminal for CPU average usage
 
-Program is now finished and NOT saving any data. To rerun application follow above steps again. :)
+This was done with Ruby as well as AppleScript.
+
+still needs to be worked on and added and some fine tweeking.
 
 
-
-... still working on the code not a finished project just yet.
-feel free to contribute 
+If any errors Please try to re run the script with the command ' ruby masterRUN.rb ' & follow the the steps again.
