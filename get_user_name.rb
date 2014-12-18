@@ -2,7 +2,7 @@ class Username
 
 	def initialize
 		@user_name = puts `osascript -e 'tell application "Terminal"
-			do script "cd ~/Desktop/CPU && whoami > username.txt"
+			do script "cd ~/Desktop/CPU && whoami > username.txt&exit"
 		end tell'`
 		@user_name_file = open(ENV['HOME']+'/Desktop/CPU/username.txt')
 	end

@@ -25,7 +25,8 @@ class File_reader
 		@get_percent.each do |percent|
 			sum += percent.to_f
 		end
-		puts "The average CPU usage is: #{(sum / @get_percent.length * 100).round / 100.0}"
+		File.write("/Users/#{$user_name_computer}/Desktop/CPU/CPU_RESULTS.txt","The average CPU usage is: #{(sum / @get_percent.length * 100).round / 100.0}")
+		# puts "The average CPU usage is: #{(sum / @get_percent.length * 100).round / 100.0}"
 	end
 
 end
