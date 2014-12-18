@@ -1,11 +1,14 @@
+# require_relative "/CPU/Code/get_user_name.rb"
+
 class CPU
 
 	def initialize
-		@chrome_file = "GooglePID.txt"
-		@safari_file = "SafariPID.txt"
-		@google = `pgrep Google > GooglePID.txt`
-		@safari = `pgrep Safari > SafariPID.txt`
-		@firefox = `pgrep FireFox > FireFoxPID.txt`
+		@chrome_file = "./Database/GooglePID.txt"
+		@safari_file = "./Database/SafariPID.txt"
+		@firefox_file = "./Database/FireFoxPID.txt"
+		@google = `pgrep Google > /Users/#{$user_name_computer}/Desktop/CPU/Database/GooglePID.txt`
+		@safari = `pgrep Safari > /Users/#{$user_name_computer}/Desktop/CPU/Database/SafariPID.txt`
+		@firefox = `pgrep fox > /Users/#{$user_name_computer}/Desktop/CPU/Database/FireFoxPID.txt`
 	end
 
 	def brower_selector
@@ -15,10 +18,10 @@ class CPU
 			@brower_choice=@chrome_file
 		elsif @brower_choice == "2"
 			@brower_choice=@safari_file
-		elsif @brower_choice== "3"
-			@brower_choice=@firefox
+		elsif @brower_choice == "3"
+			@brower_choice=@firefox_file
 		else
-			puts "Error: No File Loaded"
+			puts "Error: Please pick a number 1 - 3."
 		end
 	end
 
@@ -30,6 +33,7 @@ class CPU
 	end
 
 	def list_first
+		p @brower_choice
 		File.open(@brower_choice).each_with_index do |all,index|
 			if index == 0
 				puts all
@@ -47,7 +51,7 @@ class CPU
 
 	def apple_script
 		puts `osascript -e 'tell application "Terminal"
-		do script	"cd ~/Desktop && top -pid #{@user_choice} > CPU_info.txt"
+		do script	"cd /Users/#{$user_name_computer}/Desktop/CPU/Database/ && top -pid #{@user_choice} > CPU_info.txt"
 		end tell'`
 		# end
 	end

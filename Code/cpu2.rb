@@ -1,9 +1,9 @@
-require_relative 'get_user_name.rb'
+require_relative "../Code/get_user_name.rb"
 
 class File_reader
 
 	def initialize
-		@file = "/Users/#{$user_name_computer}/Desktop/CPU_info.txt"
+		@file = "/Users/#{$user_name_computer}/Desktop/CPU/Database/CPU_info.txt"
 		@get_percent = []
 	end
 
@@ -25,7 +25,10 @@ class File_reader
 		@get_percent.each do |percent|
 			sum += percent.to_f
 		end
-		File.write("/Users/#{$user_name_computer}/Desktop/CPU/CPU_RESULTS.txt","The average CPU usage is: #{(sum / @get_percent.length * 100).round / 100.0}")
+		if @get_percent == nil
+			puts "Oops not enough time!"
+		else
+		File.write("/Users/#{$user_name_computer}/Desktop/CPU/Database/CPU_RESULTS.txt","The average CPU usage is: #{(sum / @get_percent.length * 100).round / 100.0}")
 	end
 
 end
