@@ -17,8 +17,9 @@
 4. In Terminal navigate to your 'Desktop'
 5. Run command ' ruby masterRUN.rb '
 6. Select the browser you are testing
-7. A new Terminal window will open enter command (' Control + C ')
-8. View Terminal for CPU average usage
+7. When you are done recording your CPU activiy enter command (' Control + C ') 
+7. In the orginal Terminal window hit 'n' to continue 
+8. Check the 'CPU_RESULTS.txt' for the results
 
 #####This was done with Ruby as well as AppleScript.
 
