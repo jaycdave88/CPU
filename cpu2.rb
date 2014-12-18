@@ -26,11 +26,9 @@ class File_reader
 			sum += percent.to_f
 		end
 		File.write("/Users/#{$user_name_computer}/Desktop/CPU/CPU_RESULTS.txt","The average CPU usage is: #{(sum / @get_percent.length * 100).round / 100.0}")
-		# puts "The average CPU usage is: #{(sum / @get_percent.length * 100).round / 100.0}"
 	end
 
 end
-
 
 cpu=File_reader.new
 cpu.read_file

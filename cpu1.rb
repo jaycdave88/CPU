@@ -1,4 +1,3 @@
-
 class CPU
 
 	def initialize
@@ -53,9 +52,6 @@ class CPU
 		# end
 	end
 
-	# def open_activity_monitor
-	# 	puts `osascript -e 'tell application "Activity Monitor" to activate'`
-	# end
 end
 
 t=CPU.new
