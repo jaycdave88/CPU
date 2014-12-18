@@ -1,1 +1,0 @@
-The average CPU usage is: 2.17
