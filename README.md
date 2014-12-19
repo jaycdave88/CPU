@@ -1,7 +1,7 @@
 
 ##Before running application:
 
-1. Go to Terminal Perferences
+1. Go to Terminal Preferences
 2. Click the Settings tab (located towards the top of your Terminal Settings Window)
 3. Select the 'Shell' tab
 4. Under the drop down where it says "When the shell exits"
@@ -13,17 +13,18 @@
 
 1. Download the zip
 2. Unzip the .zip file
-3. Move the folder to your 'Desktop'
+3. Move the unzipped File ('CPU') to your 'Desktop'
 4. In Terminal navigate to your 'Desktop'
-5. Run command ' ruby masterRUN.rb '
+5. Run command ' ruby RUNME.rb '
 6. Select the browser you are testing
-7. When you are done recording your CPU activiy enter command (' Control + C ') 
-7. In the orginal Terminal window hit 'n' to continue 
-8. Check the 'CPU_RESULTS.txt' for the results
+7. When you are done recording your CPU activity enter command (' Control + C ') 
+7. In the original Terminal window hit 'n' to continue 
+8. A new Notepad window will open with the results of the 'CPU_RESULTS.txt'
 
 #####This was done with Ruby as well as AppleScript.
 
-#####still needs to be worked on and added and some fine tweeking.
+#####still needs to be worked on and added and some fine tweaking.
 
 
-#####If any errors Please try to re run the script with the command ' ruby masterRUN.rb ' & follow the the steps again.
+#####If any errors Please try to re run the script with the command ' ruby RUNME.rb ' & follow the steps again.
+
