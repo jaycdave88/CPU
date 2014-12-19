@@ -1,5 +1,4 @@
-require_relative "./get_user_name.rb"
-
+require_relative 'color.rb'
 class File_reader
 
 	def initialize
@@ -20,18 +19,17 @@ class File_reader
 		@get_percent.shift
 	end	
 
+	def error
+		puts "There was NO CPU activity to record, please try running me again for longer.".red
+	end
+
 	def sum
 		sum = 0
 		@get_percent.each do |percent|
 			sum += percent.to_f
 		end
-		if @get_percent == nil
-			puts "Oops not enough time!"
-		else
-			File.write("/Users/#{$user_name_computer}/Desktop/CPU-master/Database/CPU_RESULTS.txt","The average CPU usage is: #{(sum / @get_percent.length * 100).round / 100.0}")
-		end
+		File.write("/Users/#{$user_name_computer}/Desktop/CPU-master/Database/CPU_RESULTS.txt","The average CPU usage is: #{(sum!=0) ? (sum / @get_percent.length * 100).round / 100.0 : error}")
 	end
-
 end
 
 cpu=File_reader.new
