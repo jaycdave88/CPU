@@ -13,8 +13,9 @@
 
 1. Download the zip
 2. Unzip the .zip file
-3. Move the unzipped File ('CPU') to your 'Desktop'
+3. Move the unzipped File ('CPU-master') to your 'Desktop'
 4. In Terminal navigate to your 'Desktop'
+5. Enter command into terminal 'cd CPU-master/'
 5. Run command ' ruby RUNME.rb '
 6. Select the browser you are testing
 7. When you are done recording your CPU activity enter command (' Control + C ') 
