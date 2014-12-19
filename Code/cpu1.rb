@@ -6,9 +6,9 @@ class CPU
 		@chrome_file = "./Database/GooglePID.txt"
 		@safari_file = "./Database/SafariPID.txt"
 		@firefox_file = "./Database/FireFoxPID.txt"
-		@google = `pgrep Google > /Users/#{$user_name_computer}/Desktop/CPU/Database/GooglePID.txt`
-		@safari = `pgrep Safari > /Users/#{$user_name_computer}/Desktop/CPU/Database/SafariPID.txt`
-		@firefox = `pgrep fox > /Users/#{$user_name_computer}/Desktop/CPU/Database/FireFoxPID.txt`
+		@google = `pgrep Google > /Users/#{$user_name_computer}/Desktop/CPU-master/Database/GooglePID.txt`
+		@safari = `pgrep Safari > /Users/#{$user_name_computer}/Desktop/CPU-master/Database/SafariPID.txt`
+		@firefox = `pgrep fox > /Users/#{$user_name_computer}/Desktop/CPU-master/Database/FireFoxPID.txt`
 	end
 
 	def brower_selector
@@ -51,7 +51,7 @@ class CPU
 
 	def apple_script
 		puts `osascript -e 'tell application "Terminal"
-		do script	"cd /Users/#{$user_name_computer}/Desktop/CPU/Database/ && top -pid #{@user_choice} > CPU_info.txt"
+		do script	"cd /Users/#{$user_name_computer}/Desktop/CPU-master/Database/ && top -pid #{@user_choice} > CPU_info.txt"
 		end tell'`
 		# end
 	end
