@@ -1,4 +1,4 @@
-require_relative "./CPU-master/Code/get_user_name.rb"
+require_relative "./get_user_name.rb"
 
 class File_reader
 
@@ -28,7 +28,8 @@ class File_reader
 		if @get_percent == nil
 			puts "Oops not enough time!"
 		else
-		File.write("/Users/#{$user_name_computer}/Desktop/CPU-master/Database/CPU_RESULTS.txt","The average CPU usage is: #{(sum / @get_percent.length * 100).round / 100.0}")
+			File.write("/Users/#{$user_name_computer}/Desktop/CPU-master/Database/CPU_RESULTS.txt","The average CPU usage is: #{(sum / @get_percent.length * 100).round / 100.0}")
+		end
 	end
 
 end

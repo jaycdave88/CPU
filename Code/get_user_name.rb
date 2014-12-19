@@ -2,13 +2,13 @@ class Username
 
 	def initialize
 		@user_name = puts `osascript -e 'tell application "Terminal"
-			do script "cd ~/Desktop/CPU/Database && whoami > username.txt&exit"
+			do script "cd ~/Desktop/CPU-master/Database && whoami > username.txt&exit"
 		end tell'`
 		@user_name_file = open(ENV['HOME']+'/Desktop/CPU-master/Database/username.txt')
 	end
 
 	def trying_fix
-		@user_name_file="/Users/#{$user_name_computer}/Desktop/CPU-master/Database/username.txt"
+		@user_name_file="./Users/#{$user_name_computer}/Desktop/CPU-master/Database/username.txt"
 	end
 
 	def testun
