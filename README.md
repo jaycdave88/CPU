@@ -22,6 +22,8 @@
 7. In the original Terminal window hit 'n' to continue 
 8. A new Notepad window will open with the results of the 'CPU_RESULTS.txt'
 
+####***NOTE: If you encounter any errors, please try rerunning the script again
+
 #####This was done with Ruby as well as AppleScript.
 
 #####still needs to be worked on and added and some fine tweaking.
