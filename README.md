@@ -16,13 +16,13 @@
 3. Move the unzipped File ('CPU-master') to your 'Desktop'
 4. In Terminal navigate to your 'Desktop'
 5. Enter command into terminal 'cd CPU-master/'
-5. Run command ' ruby RUNME.rb '
-6. Select the browser you are testing
-7. When you are done recording your CPU activity enter command (' Control + C ') 
-7. In the original Terminal window hit 'n' to continue 
-8. A new Notepad window will open with the results of the 'CPU_RESULTS.txt'
-
+6. Run command ' ruby RUNME.rb '
 ####***NOTE: If you encounter any errors, please try rerunning the script again
+7. Select the browser you are testing
+8. When you are done recording your CPU activity enter command (' Control + C ') 
+9. In the original Terminal window hit 'n' to continue 
+10. A new Notepad window will open with the results of the 'CPU_RESULTS.txt'
+
 
 #####This was done with Ruby as well as AppleScript.
 
