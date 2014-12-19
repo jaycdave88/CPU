@@ -1,4 +1,3 @@
-# require_relative "/CPU/Code/get_user_name.rb"
 
 class CPU
 

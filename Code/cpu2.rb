@@ -1,4 +1,4 @@
-require_relative "../Code/get_user_name.rb"
+require_relative "./CPU-master/Code/get_user_name.rb"
 
 class File_reader
 
